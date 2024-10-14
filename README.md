@@ -1,4 +1,6 @@
-** Demo
-[Demo](https://happybirthday.panyilun.cn/sample_allen/)
+## Demo
 
-Pending RM ...
+Click on [Demo](https://happybirthday.panyilun.cn/sample_allen/)
+
+## Other things pending
+  Pending RM ...
