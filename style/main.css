@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+.song {
+  visibility: hidden;
+}
+
+/* ------------------------ 弹窗 ------------------------ */
+
+/* 音乐弹窗 文字 提示样式 */
+.swal-title {
+  font-size: 20px;
+  text-align: center;  
+}
+
+/* 音乐弹窗 图标 提示样式 */
+.swal-icon {
+  width: 70px;  
+  height: 70px;  
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  width: 100vw;
+}
+
+.container > div {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 20vh;
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  color: #555;
+  width: 100%;
+  position: absolute;
+  bottom: 0; 
+  z-index: 10;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 10px;
+  z-index: 10;
+}
+
+.footer-content a {
+  color: #202122;
+  text-decoration: none;
+}
+
+/* page 1 */
+.nameGreet {
+  font-size: 3rem;
+}
+
+.greetingText {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+/* page 2 */
+.page2text {
+  font-size: 2.5rem;
+}
+
+
+/* page3 / 对话框样式 */
+
+.hbd-chatbox {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.page3 .text-box {
+  border: 3px solid #aaa;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+  background-color: #fff; 
+  z-index: 20;
+}
+
+/* 对话框字体 */
+.text-box p {
+  margin: 0;
+  text-align: left;
+}
+
+.text-box span {
+  visibility: hidden;
+}
+
+/* page3 / 按钮样式 */
+.text-box .fake-btn {
+  width: 90px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  background-color: rgb(21, 161, 237);
+  border-radius: 6px;
+  color: #fff;
+  position: absolute;
+  bottom: -50px;
+  right: 10px;
+}
+
+.postTextBox p {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.page6text strong {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px 5px;
+}
+
+.postTextBox .page8text {
+  font-size: 2.5rem;
+}
+
+.page8text span, .bingText span, .wish-hbd span {
+  display: inline-block;
+}
+
+.bingText span{
+  font-size: 15rem;
+}
+
+.picPage {
+  position: relative;
+  top: 9vh;
+  z-index: 10;
+}
+
+.picPage img {
+  display: inline-block;
+  height: 350px;
+  max-width: 100%;
+  z-index: 10;
+}
+
+.picPage .hat {
+  left: 41.5%;
+  position: absolute;
+  /* transform: scale(0.1); */
+  top: -35%;
+  width: 80px;
+  z-index: 10;
+}
+
+
+/* ------------------------ 气球 ------------------------ */
+.baloons {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 8;
+}
+
+.baloons img {
+  display: inline-block;
+  width: 220px; 
+  height: auto; 
+  position: absolute;
+  animation: float 5s ease-in-out infinite; 
+}
+
+.baloons img:nth-child(even) {
+  left: 10%;
+}
+
+.baloons img:nth-child(odd) {
+  right: 10%;
+}
+
+.baloons img:nth-child(3n) {
+  left: 50%;
+}
+
+/* ------------------------ 烟花 ------------------------ */
+.firework {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 8;
+}
+
+.firework svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 25px;
+  z-index: -1;
+}
+
+.firework svg:nth-child(1) {
+  fill: #bd6ecf;
+  left: 5vw;
+  top: 7vh;
+}
+
+.firework svg:nth-child(2) {
+  fill: #7dd175;
+  left: 35vw;
+  top: 23vh;
+}
+
+.firework svg:nth-child(3) {
+  fill: #349d8b;
+  left: 23vw;
+  top: 33vh;
+}
+
+.firework svg:nth-child(4) {
+  fill: #347a9d;
+  left: 57vw;
+  top: 43vh;
+}
+
+.firework svg:nth-child(5) {
+  fill: #c66053;
+  left: 7vw;
+  top: 68vh;
+}
+
+.firework svg:nth-child(6) {
+  fill: #bfaa40;
+  left: 77vw;
+  top: 42vh;
+}
+
+.firework svg:nth-child(7) {
+  fill: #e3bae8;
+  left: 83vw;
+  top: 68vh;
+}
+
+.firework svg:nth-child(8) {
+  fill: #8762cb;
+  left: 37vw;
+  top: 86vh;
+}
+
+.firework svg:nth-child(9) {
+  fill: #9a90da;
+  left: 87vw;
+  top: 94vh;
+}
+
+/* ------------------------ 背景 ------------------------ */
+
+.bg {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ee9ca7; /* Start with the same color as the gradient */
+  background-image: linear-gradient(to bottom right, #ee9ca7 0%, #ee9ca7 100%);
+  transition: background-color 4s ease; /* Animate background color only */
+}
+
+
+.bg-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.bg-bubbles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: -100px;
+  border-radius: 50%;
+  animation: rise 20s infinite;
+  animation-timing-function: linear;
+}
+
+.bg-bubbles li:nth-child(1) {
+  left: 10%;
+  width: 80px;
+  height: 80px;
+  animation-duration: 25s;
+}
+.bg-bubbles li:nth-child(2) {
+  left: 20%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 17s;
+}
+.bg-bubbles li:nth-child(3) {
+  left: 25%;
+  width: 40px;
+  height: 40px;
+  animation-duration: 15s;
+}
+.bg-bubbles li:nth-child(4) {
+  left: 40%;
+  width: 70px;
+  height: 70px;
+  animation-duration: 22s;
+}
+.bg-bubbles li:nth-child(5) {
+  left: 55%;
+  width: 90px;
+  height: 90px;
+  animation-duration: 26s;
+}
+.bg-bubbles li:nth-child(6) {
+  left: 65%;
+  width: 50px;
+  height: 50px;
+  animation-duration: 18s;
+}
+.bg-bubbles li:nth-child(7) {
+  left: 70%;
+  width: 120px;
+  height: 120px;
+  animation-duration: 30s;
+}
+.bg-bubbles li:nth-child(8) {
+  left: 85%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 14s;
+}
+.bg-bubbles li:nth-child(9) {
+  left: 90%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 12s;
+}
+.bg-bubbles li:nth-child(10) {
+  left: 95%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 21s;
+}
+
+@keyframes rise {
+  0% {
+      transform: translateY(0) scale(1);
+  }
+  100% {
+      transform: translateY(-1000px) scale(1.2);
+  }
+}
+
+
+
+/* Media Queries */
+@media screen and (max-height: 1000px) {
+  .picPage .hat {
+    left: 40%;
+  }
+
+  .wish-hbd {
+    font-size: 2.2em;
+  }
+
+  .wish h5 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .picPage .hat {
+    left: 37%;
+  }
+
+  .wish-hbd {
+    font-size: 2.2em;
+  }
+
+  .wish h5 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .picPage .hat {
+    left: 32%;
+  }
+
+  .wish-hbd {
+    font-size: 2.2em;
+  }
+
+  .wish h5 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-height: 850px) and (max-width: 450px) {
+  .picPage .hat {
+    left: 32%;
+  }
+  .wish-hbd {
+    font-size: 2.2em;
+  }
+
+  .wish h5 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  .page3 .text-box {
+    width: 90%;
+  }
+
+  .text-box {
+    bottom: -30px;
+    right: 5px;
+  }
+
+  .fake-btn {
+    bottom: -60px;
+    right: 5px;
+  }
+
+  .page8text span {
+    display: block;
+  }
+
+  .bingText span {
+    font-size: 10rem;
+  }
+
+  .picPage .hat {
+    /* top: -20px; */
+    width: 50px;
+  }
+
+  .wish-hbd {
+    font-size: 2.2em;
+  }
+
+  .wish h5 {
+    font-size: 1.4rem;
+  }
+}
